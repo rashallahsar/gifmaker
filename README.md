@@ -4,20 +4,51 @@ GifMaker GUI is a Python application for extracting clips from videos and conver
 
 ---
 
+## Quick Start
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/rashallahsar/gifmaker.git
+cd gifmaker
+````
+
+2. **Install dependencies** (Arch/Garuda Linux + Fish):
+
+```bash
+sudo pacman -S python tk ffmpeg
+```
+
+3. **Place your videos** in the `examples/` folder, or create symlinks to your local videos.
+   *Note: Personal videos are not included in the repo.*
+
+4. **Run the GIF Maker GUI:**
+
+```bash
+python3 gif_maker_gui.py
+```
+
+5. **Use the GUI:**
+
+* Adjust **Start Time**, **Duration**, **FPS**, and **Width** sliders.
+* Click **Generate GIF** to extract the clip, convert it to a GIF, and automatically open it.
+
+---
+
 ## Features
 
-- Cut a portion of any video clip  
-- Convert video clips into GIFs with adjustable FPS and width  
-- Automatically open the generated GIF  
-- Safe to use with symlinks; personal videos are ignored and not uploaded to Git
+* Cut a portion of any video clip
+* Convert video clips into GIFs with adjustable FPS and width
+* Automatically open the generated GIF
+* Safe to use with symlinks; personal videos are ignored and not uploaded to Git
 
 ---
 
 ## Requirements
 
-- **Python 3**  
-- **Tkinter** (for GUI)  
-- **FFmpeg** (for video processing)
+* **Python 3**
+* **Tkinter** (for GUI)
+* **FFmpeg** (for video processing)
 
 ---
 
@@ -27,7 +58,7 @@ GifMaker GUI is a Python application for extracting clips from videos and conver
 
 ```bash
 python3 -m venv venv
-````
+```
 
 2. Activate it:
 
@@ -49,27 +80,12 @@ deactivate
 
 ---
 
-## Installing Dependencies (Arch/Garuda Linux + Fish)
-
-```bash
-sudo pacman -S python tk ffmpeg
-```
-
-Verify installation:
-
-```bash
-python3 -m tkinter  # should open a test GUI window
-ffmpeg -version     # should show version info
-```
-
----
-
 ## Setup
 
 1. Clone the repository:
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/rashallahsar/gifmaker.git
 cd gifmaker
 ```
 
@@ -112,4 +128,6 @@ Click **Generate GIF** to:
 This project is released under the **Unlicense**. You can copy, modify, publish, use, compile, sell, or distribute the software, for any purpose, commercial or non-commercial, and by any means.
 
 For more details, see [https://unlicense.org](https://unlicense.org)
+
+```
 
