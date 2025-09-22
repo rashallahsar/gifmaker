@@ -1,1 +1,10 @@
+# Ignore all video files
+*.mkv
+*.mp4
+*.mov
+*.avi
+*.gif
+
+# Ignore symlinked video folders
+examples/Gifmakervideo/
 gif_maker_env/
